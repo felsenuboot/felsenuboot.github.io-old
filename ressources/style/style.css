@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');/*
+ * Author of MediaQuery Template: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px)
+and (orientation : landscape) {
+/* Styles */
+body {
+    width: 650px;
+    margin: 0 auto;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px) 
+and (orientation : portrait) {
+/* Styles */
+body {
+    width: 650px;
+    margin: 0 auto;
+}
+}
+@media only screen 
+and (min-width : 800px) {
+/* Styles */
+body {
+    width: 750px;
+    margin: 0 auto;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+body {
+    width:850px;
+    margin: 0 auto;
+}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+html {
+    background-color: #FFF;
+    font-size: 16px;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Spectral', serif;
+    font-size: 16px;
+    line-height: 1.25rem;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: -1.5px;
+}
+.subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+}
+h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+h4 {
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+p {
+    font-weight: normal;
+    font-size: 1rem;
+}
+note {
+    font-size: .75rem;
+}
+.table-name {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.table-note {
+    margin-bottom: 1.0rem;
+    font-style: italic;
+    font-size: .75rem;
+}
+.table-note p{
+    margin: 0.1rem;
+    font-size: .75rem;
+}
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td, table th {
+    padding-left: 8px;
+  }
+  table thead tr {
+    height: 60px;
+    background: #03a9f4;
+    font-size: 16px;
+  }
+  table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+  }
+  table tbody tr:hover{
+      background-color: #81d4fa;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table td, table th {
+    text-align: left;
+  }
+  table td.l, table th.l {
+    text-align: right;
+  }
+  table td.c, table th.c {
+    text-align: center;
+  }
+  table td.r, table th.r {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 35.5em) {
+    table {
+      display: block;
+    }
+    table > *, table tr, table td, table th {
+      display: block;
+    }
+    table thead {
+      display: none;
+    }
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+
+  }

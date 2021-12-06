@@ -2,67 +2,289 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hanging paragraph CSS style, for APA-style references</title>
-  <meta name="description" content="A quick template that will allow anyone to copy and apply the CSS needed to hang references in their web publications using correct APA style syntax.">
-  <meta name="author" content="Robert Valencia">
-  
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="Felix Schramm">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="apa-reference-styles.css">
-  <style type="text/css" media="all">
-    /*  
-    Generic styling for sample, this should not be copied to your design/template.
-    */
-    #main{width: 42em;font: 1em/1.4 "Cambria",Georgia, sans-serif;}
-    h2{font-size: 1.5em;font-weight: bold;margin: .83em 0;}
-    .ref-apa h2 span, .ref-apa dt span {font-size: .76em;font-weight: normal;opacity:.3;}
-  </style>
+  <link rel="stylesheet" href="../../ressources/style/style.css">
 </head>
 <body>
-  <div id="container">
     <header>
-      <h1>CSS for creating a hanging indent <em>—APA style—</em> References list</h1>
+        <h1>Advanced Marketing</h1>
+        <div class="subtitle">Vrije Universiteit Brussel - Assignment 2</div>
     </header>
-
-    <div id="main" role="main">
-      <p>The following is a quick template that will allow anyone to copy and apply the CSS needed to hang references in their web publications using correct APA style syntax. You may format your references in whatever semantic structure you are using: as list items within an ordered or unordered list, as definition descriptions within a defintion list, or even as paragraphs within a division element.</p>
-      <p>To apply:<br />
-        1. Paste the following code into your CSS file:  the <code>class="ref-apa"</code> css class to the wrapping element in your references, whether it be a <code>div</code>, an <code>ol</code>, <code>ul</code> or <code>dl</code>.<br />
-        <strong>update:</strong> As an alternative to <code>.ref-apa</code>, the following class now work interchangeably too: <code>.refapa</code>, <code>.apa</code>, <code>.aparef</code>, and <code>.apa-ref</code>
-        </p>
-      
-      <div class="ref-apa">
-        <h2>References <span>div style</span></h2>
-        <p>Herbst-Damn, K. L., & Kulik, J. A. (2005). Volunteer support, marital status, and the survival times of terminally ill patients. <em>Health Psychology, 24</em>(1), 225-229. doi:10.1037/0278-6133.24.2.225</p>
-        <p>Angeli, E., Wagner, J., Lawrick, E., Moore, K., Anderson, M., Soderlund, L., & Brizee, A. (2010, May 5). <em>General format.</em> Retrieved from http://owl.english.purdue.edu/owl/resource/560/01/</p>
-        <p>Wegener, D. T., Kerr, N. L., Fleming, M. A., & Petty, R. E. (2000). Flexible corrections of juror judgments: Implications for jury instructions. <em>Psychology, Public Policy, & Law, 6</em>, 629-654.</p>
-        <p>Wegener, D. T., & Petty, R. E. (1994). Mood management across affective states: The hedonic contingency hypothesis. <em>Journal of Personality & Social Psychology, 66</em>, 1034-1048.</p>
-      </div><!-- .ref-apa -->
-        <ul class="ref-apa">
-          <h2>References <span>ul style</span></h2>
-          <li>Herbst-Damn, K. L., & Kulik, J. A. (2005). Volunteer support, marital status, and the survival times of terminally ill patients. <em>Health Psychology, 24</em>(1), 225-229. doi:10.1037/0278-6133.24.2.225</li>
-          <li>Angeli, E., Wagner, J., Lawrick, E., Moore, K., Anderson, M., Soderlund, L., & Brizee, A. (2010, May 5). <em>General format.</em> Retrieved from http://owl.english.purdue.edu/owl/resource/560/01/</li>
-          <li>Wegener, D. T., & Petty, R. E. (1994). Mood management across affective states: The hedonic contingency hypothesis. <em>Journal of Personality & Social Psychology, 66</em>, 1034-1048.</li>
-          <li>Wegener, D. T., Kerr, N. L., Fleming, M. A., & Petty, R. E. (2000). Flexible corrections of juror judgments: Implications for jury instructions. <em>Psychology, Public Policy, & Law, 6</em>, 629-654.</li>
-        </ul>
-        <ol class="ref-apa">
-          <h2>References <span>ol style</span></h2>
-          <li>Herbst-Damn, K. L., & Kulik, J. A. (2005). Volunteer support, marital status, and the survival times of terminally ill patients. <em>Health Psychology, 24</em>(1), 225-229. doi:10.1037/0278-6133.24.2.225</li>
-          <li>Angeli, E., Wagner, J., Lawrick, E., Moore, K., Anderson, M., Soderlund, L., & Brizee, A. (2010, May 5). <em>General format.</em> Retrieved from http://owl.english.purdue.edu/owl/resource/560/01/</li>
-          <li>Wegener, D. T., & Petty, R. E. (1994). Mood management across affective states: The hedonic contingency hypothesis. <em>Journal of Personality & Social Psychology, 66</em>, 1034-1048.</li>
-          <li>Wegener, D. T., Kerr, N. L., Fleming, M. A., & Petty, R. E. (2000). Flexible corrections of juror judgments: Implications for jury instructions. <em>Psychology, Public Policy, & Law, 6</em>, 629-654.</li>
-        </ol>
-        <dl class="ref-apa">
-          <dt>References <span>definition list style</span></dt>
-          <dd>Herbst-Damn, K. L., & Kulik, J. A. (2005). Volunteer support, marital status, and the survival times of terminally ill patients. <em>Health Psychology, 24</em>(1), 225-229. doi:10.1037/0278-6133.24.2.225</dd>
-          <dd>Angeli, E., Wagner, J., Lawrick, E., Moore, K., Anderson, M., Soderlund, L., & Brizee, A. (2010, May 5). <em>General format.</em> Retrieved from http://owl.english.purdue.edu/owl/resource/560/01/</dd>
-          <dd>Wegener, D. T., & Petty, R. E. (1994). Mood management across affective states: The hedonic contingency hypothesis. <em>Journal of Personality & Social Psychology, 66</em>, 1034-1048.</dd>
-          <dd>Wegener, D. T., Kerr, N. L., Fleming, M. A., & Petty, R. E. (2000). Flexible corrections of juror judgments: Implications for jury instructions. <em>Psychology, Public Policy, & Law, 6</em>, 629-654.</dd>
-        </dl>
-    </div>
-
+    <main>
+        <section class="Introduction">
+            <article>
+                <h2>Scenario</h2>
+                <p><strong>BMW</strong> wants to increase its market share for cars among the population in Thailand. Suppose that the main competitors for cars in Thailand are Toyota, Daewoo and Nissan and that the total size of the market in Thailand is estimated at 1.000.000 customers.</p>
+    
+                <p>To figure out the current competitive position, and to help set strategy, BMW has commissioned a customer equity study of the car sector. This began with focus group interviews with clients to figure out the drivers of Value Equity, Brand Equity and Relationship Equity. Based on the focus groups, BMW came up with the following customer equity (sub-)drivers:</p>
+    
+                <ul>
+                    <li>
+                        Drivers of Value equity
+                        <ul>
+                            <li>
+                                Quality of the car ("qualphone")
+                            </li>
+                            <li>
+                                Price of the car ("price")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Drivers of Brand equity
+                        <ul>
+                            <li>
+                                Attitude towards the brand (“attbrand”)
+                            </li>
+                            <li>
+                                Awareness of the brand’s marketing communications (“attad”)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    Drivers of Relationship Equity
+                        <ul>
+                            <li>
+                                Perceptions of the support network (“supperc”)
+                            </li>
+                            <li>
+                                Feeling of belongingness to the brand community (“brandcommun”)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    Following the identification of customer equity drivers, BMW hired a professional after sales service to collect survey data from a sample of the population of Thailand. These data were used to analyze BMW’s current competitive position, estimate BMW’s current customer equity, and provide the basis for what-if analyses of potential marketing actions. We assume that each client buys a new smartphone every year (the residents of Thailand like new cars). The average price of a BMW corresponds to an amount of 30 000 euro. 
+                </p>
+                <p>
+                    BMW assumes that the average net contribution margin is about 20% (best guess, based on historic company data). Now, a discount rate of 5% per year is a reasonable choice. 
+                </p>
+                <div id="table1">
+                    <div class="table-name">
+                        Table 1: Importance and Performance Ratings
+                    </div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Impact<sup>1</sup></th>
+                            <th>Performance BMW</th>
+                            <th>Performance One TOYOTA</th>
+                            <th>Performance DAEWOO</th>
+                            <th>Performance NISSAN</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Qualphone<sup>2</sup></td>
+                            <td>0,43</td>
+                            <td>5,6</td>
+                            <td>4,2</td>
+                            <td>3,6</td>
+                            <td>3,6</td>
+                          </tr>
+                          <tr>
+                            <td>Price<sup>2</sup></td>
+                            <td>0,34</td>
+                            <td>3,0</td>
+                            <td>4,7</td>
+                            <td>5,8</td>
+                            <td>4,9</td>
+                          </tr>
+                          <tr>
+                            <td>Attbrand<sup>2</sup></td>
+                            <td>0,29</td>
+                            <td>6,3</td>
+                            <td>4,3</td>
+                            <td>4,8</td>
+                            <td>4,5</td>
+                          </tr>
+                          <tr>
+                            <td>Attad<sup>2</sup></td>
+                            <td>0,26</td>
+                            <td>4,9</td>
+                            <td>5,6</td>
+                            <td>3,5</td>
+                            <td>3,3</td>
+                          </tr>
+                          <tr>
+                            <td>Supperc<sup>2</sup></td>
+                            <td>0,21</td>
+                            <td>6,6</td>
+                            <td>5,1</td>
+                            <td>4,4</td>
+                            <td>4,5</td>
+                          </tr>
+                          <tr>
+                            <td>brandcomm<sup>2</sup></td>
+                            <td>0,08</td>
+                            <td>6,7</td>
+                            <td>5,4</td>
+                            <td>4,2</td>
+                            <td>3,9</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p><sup>1</sup>Impact measures are derived importance scores originating from a regression analysis (range: 0 to 1 with 0 being very unimportant and 1 being very important)</p>
+                        <p><sup>2</sup>Performance measures are based on 7-point scales (1= very bad; 7 = very good)</p>
+                    </div>
+                </div>
+                <div id="table2">
+                    <div class="table-name">
+                        Table 2: Information on Inertia and Companies Last Chosen
+                    </div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>Impact</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Inertia Coefficient </td>
+                            <td>0,35</td>
+                          </tr>
+                          <tr>
+                            <td>Brand last chosen</td>
+                            <td> </td>
+                          </tr>
+                          <tr>
+                            <td>BMW</td>
+                            <td>10%</td>
+                          </tr>
+                          <tr>
+                            <td>Toyota</td>
+                            <td>35%</td>
+                          </tr>
+                          <tr>
+                            <td>Daewoo</td>
+                            <td>25%</td>
+                          </tr>
+                          <tr>
+                            <td>Nissan</td>
+                            <td>30%</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>Note: BMW assumes that TOYOTA, DAEWOO and NISSAN  comprise 100% of the car market </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="Answers">
+            <h2>Answers</h2>
+            <article class="Question 1">
+                <h3>Question 1</h3>
+                <p>Calculate the brand switching matrix (assuming a planning horizon of 1 year).</p>
+                <p>First the impact factor is multiplied with the respective companies performance from <a href="#table1">table 1:</a></p>
+                <div id="table3">
+                    <div class="table-name">Table 3</div>
+                    <table id="table3">
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>BMW</th>
+                            <th>TOYOTA</th>
+                            <th>DAEWOO</th>
+                            <th>NISSAN</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Qualphone</td>
+                            <td>2,408</td>
+                            <td>1,806</td>
+                            <td>1,548</td>
+                            <td>1,548</td>
+                          </tr>
+                          <tr>
+                            <td>Price</td>
+                            <td>1,02</td>
+                            <td>1,598</td>
+                            <td>1,972</td>
+                            <td>1,666</td>
+                          </tr>
+                          <tr>
+                            <td>Attbrand</td>
+                            <td>1,827</td>
+                            <td>1,247</td>
+                            <td>1,392</td>
+                            <td>1,305</td>
+                          </tr>
+                          <tr>
+                            <td>Attad</td>
+                            <td>1,274</td>
+                            <td>1,456</td>
+                            <td>0,91</td>
+                            <td>0,858</td>
+                          </tr>
+                          <tr>
+                            <td>Supperc</td>
+                            <td>1,386</td>
+                            <td>1,071</td>
+                            <td>0,924</td>
+                            <td>0,945</td>
+                          </tr>
+                          <tr>
+                            <td>Brandcomm</td>
+                            <td>0,536</td>
+                            <td>0,432</td>
+                            <td>0,336</td>
+                            <td>0,312</td>
+                          </tr>
+                          <tr>
+                            <td>Sum</td>
+                            <td>8,451</td>
+                            <td>7,61</td>
+                            <td>7,082</td>
+                            <td>6,634</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        Note: impact * performance<sub>company</sub>
+                    </div>
+                </div>
+                <p>Furthermore, the products per company are added. If the utility refers from the same company to the same company (e.g. BWM to BMW) then the inertia coefficient is added (<a href="#table2">table 2</a>). The result are the utility factors per company.</p>
+                <div id="table4">
+                    <div class="table-name">Table 4</div>
+                    <table><thead><tr><th> </th><th>BMW</th><th> TOYOTA</th><th>DAEWOO</th><th>NISSAN</th></tr></thead><tbody><tr><td>BMW</td><td>8,801</td><td>7,61</td><td>7,082</td><td>6,634</td></tr><tr><td>TOYOTA</td><td>8,451</td><td>7,96</td><td>7,082</td><td>6,634</td></tr><tr><td>DAEWOO</td><td>8,451</td><td>7,61</td><td>7,432</td><td>6,634</td></tr><tr><td>NISSAN</td><td>8,451</td><td>7,61</td><td>7,082</td><td>6,984</td></tr></tbody></table>
+                    <div class="table-note">
+                        Note: Utility = ß<sub>0k</sub>LAST<sub>ijk</sub> + &sum;b<sub>ikl</sub>X<sub>ikl</sub>
+                    </div>
+                </div>
+                <p>In the next step the results from <a href="#table4">table 4</a> are exponentiated: EXP<sub>xy</sub> = e<sup>Utility</sup>.</p>
+                <div id="#table5">
+                    <div class="table-name">
+                        Table 5
+                    </div>
+                    <table><thead><tr><th> </th><th>BMW</th><th> TOYOTA</th><th>DAEWOO</th><th>NISSAN</th><th>Sum</th></tr></thead><tbody><tr><td>BMW</td><td>      6.640,88 </td><td>      2.018,28 </td><td>     1.190,35 </td><td>        760,52 </td><td>    10.610,02 </td></tr><tr><td>TOYOTA</td><td>      4.679,75 </td><td>      2.864,07 </td><td>     1.190,35 </td><td>        760,52 </td><td>      9.494,69 </td></tr><tr><td>DAEWOO</td><td>      4.679,75 </td><td>      2.018,28 </td><td>     1.689,18 </td><td>        760,52 </td><td>      9.147,73 </td></tr><tr><td>NISSAN</td><td>      4.679,75 </td><td>      2.018,28 </td><td>     1.190,35 </td><td>     1.079,23 </td><td>      8.967,60 </td></tr></tbody></table>
+                    <div class="table-note">
+                        Note: e<sup>Utility</sup>
+                    </div>
+                </div>
+                <p>The final step to get the switching probabilities per customer is to perform a division with the data from <a href="#table 5">table 5</a>: EXP<sub>xy</sub>/EXP<sub>y</sub>. </br><note>(x corresponds to columns, y corresponds to lines)</note></p>
+                <p>The result is the answer to Question 1.</p>
+                <div id="table6">
+                    <div class="table-name">
+                        Table 6
+                    </div>
+                    <table><thead><tr><th> </th><th>BMW</th><th> TOYOTA</th><th>DAEWOO</th><th>NISSAN</th></tr></thead><tbody><tr><td>BMW</td><td>62,59%</td><td>19,02%</td><td>11,22%</td><td>7,17%</td></tr><tr><td>TOYOTA</td><td>49,29%</td><td>30,17%</td><td>12,54%</td><td>8,01%</td></tr><tr><td>DAEWOO</td><td>51,16%</td><td>22,06%</td><td>18,47%</td><td>8,31%</td></tr><tr><td>NISSAN</td><td>52,19%</td><td>22,51%</td><td>13,27%</td><td>12,03%</td></tr></tbody></table>
+                    <div class="table-note">
+                        Note: Pr<sub>brand j</sub>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer>
       
     </footer>
-  </div>
 </body>
 </html>
