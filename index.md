@@ -5,3 +5,6 @@
 
 [Excursion](https://felsenuboot.github.io/excursion/)
 >HTML Learning Project
+
+[Marketing Project](https://felsenuboot.github.io/marketing_assignment_2_2021/)
+>Marketing Project
