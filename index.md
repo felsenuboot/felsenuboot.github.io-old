@@ -1,10 +1,13 @@
 # Hello World
 
-[Number Guesser](https://felsenuboot.github.io/number-guesser/)
->JS Project to get familiar with Javascript
+## Programming stuff
+### Learning
+1. [Number Guesser](https://felsenuboot.github.io/number-guesser/)
+<br>_JS Project to get familiar with Javascript_
 
-[Excursion](https://felsenuboot.github.io/excursion/)
->HTML Learning Project
+2. [Excursion](https://felsenuboot.github.io/excursion/)
+<br>_HTML Learning Project_
 
-[Marketing Project](https://felsenuboot.github.io/marketing_assignment_2_2021/)
->Marketing Project
+## University
+1. [Marketing Assignment 2](./University/Marketing/assignment2.html)
+
