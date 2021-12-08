@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');/*
+ * Author of MediaQuery Template: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+ 
+@media only screen 
+and (max-width : 599px) 
+/*or (max-device-width : 599px)*/{
+table {
+    display:none;
+}
+}
+@media only screen
+and (min-width: 600px) {
+    .overlay {
+        display:none;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+table {
+    display:none;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+table {
+    display:none;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px)
+and (orientation : landscape) {
+/* Styles */
+body {
+    width: 650px;
+    margin: 0 auto;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 810px) 
+and (max-device-width : 1080px) 
+and (orientation : portrait) {
+/* Styles */
+body {
+    width: 650px;
+    margin: 0 auto;
+}
+}
+@media only screen 
+and (min-width : 800px) {
+/* Styles */
+body {
+    width: 750px;
+    margin: 0 auto;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+body {
+    width:850px;
+    margin: 0 auto;
+}
+}
+
+
+
+html {
+    background-color: #FFF;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+body {
+    /*min-height: 100vh;*/
+    font-family: 'Spectral', serif;
+    font-size: 16px;
+    line-height: 1.25rem;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+h4 {
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+p {
+    font-weight: normal;
+    font-size: 1rem;
+}
+note {
+    font-size: .75rem;
+}
+.table-name {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.table-note {
+    margin-bottom: 1.0rem;
+    font-style: italic;
+    font-size: .75rem;
+}
+.table-note p{
+    margin: 0.1rem;
+    font-size: .75rem;
+}
+
+  
+  @media screen and (max-width: 35.5em) {
+    /*table {
+      display: block;
+    }
+    table > *, table tr, table td, table th {
+      display: block;
+    }
+    table thead {
+      display: none;
+    }*/
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+
+  }
+
+nav {
+    background-color: #eee;
+    overflow: hidden;
+    /*scroll-behavior: smooth;*/
+    margin: 1.5rem auto;
+  }
+  nav .container {
+    height: calc(3em + 4px);
+  }
+  nav .container section {
+    padding: calc(1em + 2px);
+    width: 100vw;
+  }
+  nav .container section a {
+    border: solid 1px transparent;
+    padding: 1em;
+  }
+
+
+  .phone {
+    height: 50px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: rotate 1.5s ease-in-out infinite alternate;
+    /* display: none; */
+  }
+  
+  .message {
+    color: white;
+    font-size: 1em;
+    margin-top: 40px;
+    font-family: sans-serif;
+    /* display: none; */
+
+  }
+  .center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+
+  @keyframes rotate {
+    0% {
+          transform: rotate(0deg)
+      }
+      50% {
+          transform: rotate(-90deg)
+      }
+      100% {
+          transform: rotate(-90deg)
+      }
+  }
+  
+  @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+    .phone, .message {
+      display: block;
+    }
+  }
+ 
