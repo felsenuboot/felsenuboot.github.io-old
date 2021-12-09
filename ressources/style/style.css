@@ -190,6 +190,11 @@ p {
   font-weight: normal;
 }
 
+.question {
+  font-style: italic;
+  font-color: #fff;
+}
+
 article p {
   text-align: justify;
 }
@@ -261,5 +266,12 @@ figure figcaption p {
   margin-bottom: 0.5rem;
   font-style: italic;
   font-weight: bold;
+}
+
+footer {
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-top: 15%;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
