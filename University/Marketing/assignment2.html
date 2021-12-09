@@ -36,10 +36,9 @@
                   <a id="one" href="#top2">Back</a>
                   <a href="#q1">Question 1</a>
                   <a href="#q2">Question 2</a>
+                  <a href="#q3">Question 3</a>
                 </div>
-              </nav>
-    
-              
+            </nav>
             <section class="Introduction">
                 <article id="scenario">
                     <h2>Scenario</h2>
@@ -213,7 +212,7 @@
                 <h2>Answers</h2>
                 <article id="q1" class="Question 1">
                     <h3>Question 1</h3>
-                    <p>Calculate the brand switching matrix (assuming a planning horizon of 1 year).</p>
+                    <p class="question">Calculate the brand switching matrix (assuming a planning horizon of 1 year).</p>
                     <p>First the impact factor is multiplied with the respective companies performance from <a href="#table1">table 1:</a></p>
                     <div id="table3">
                         
@@ -340,7 +339,7 @@
                 </article>
                 <article id="q2" class="Question 2">
                     <h3>Question 2</h3>
-                    <p>
+                    <p class="question">
                         Which brand will acquire the most new customers?
                     </p>
                     <p>To calculate the number of new customers each brand will acquire, the probability values from <a href="#table6">table 6</a> have to be multiplied with the total <a href="#POP">population size.</a>The resulting table shows absolute numbers of customers switching (or staying) from brands.</p>
@@ -348,7 +347,7 @@
                         
                         <figure>
                           <div class="table-name">
-                            Table 6
+                            Table 7
                         </div>
                           <table><thead><tr><th> </th><th>BMW</th><th> TOYOTA</th><th>DAEWOO</th><th>NISSAN</th></tr></thead><tbody><tr><td>BMW</td><td>62591</td><td>19022</td><td>11219</td><td>7168</td></tr><tr><td>TOYOTA</td><td>172508</td><td>105578</td><td>43879</td><td>28035</td></tr><tr><td>DAEWOO</td><td>127894</td><td>55158</td><td>46164</td><td>20784</td></tr><tr><td>NISSAN</td><td>156555</td><td>67519</td><td>39822</td><td>36104</td></tr><tr style="background-color: #a5d6a7;"><td>&sum;Customers coming from other brands</td><td>       456.957 </td><td>       141.699 </td><td>        94.920 </td><td>        55.987 </td></tr></tbody></table>
 
@@ -363,10 +362,106 @@
                     </div>
                     <div class="flourish-embed flourish-sankey" data-src="visualisation/8046206"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                 </article>
+                <article id="q3" class="Question 3">
+                  <h3>Question 3</h3>
+                  <p class="question">
+                    BMW can ‘acquire’ customers by making them switch from its competitors. From the customer’s perspective, what brand choice entails the highest gain in perceived utility for a customer: Is it (1) switching from TOYOTA to BMW, (2) switching from DAEWOO to BMW, or (3) switching from NISSAN to BMW? Explain your answer and use the appropriate formula to clarify your answer in a numerical manner. Tip: compare to ‘status quo’ (i.e., staying with Toyota, Daewoo or Nissan).
+                  </p>
+                  <p>We look for the highest difference in perceived Utility when switching from Company a to Company b. The &Delta;Utility<sub>j</sub> is calculated by substracting the perceived Utility<sub>company a to company b</sub> from Utility<sub>company a to company a</sub> (<a href="#table4">Table 4</a>). The resulting matrix shows the difference in perceived Utilities when switching (or staying) from Company to Company. The highest difference is experienced, when switching from Nissan to BMW (1,467).</p>
+                  <div id="table7">
+                      
+                      <figure>
+                        <div class="table-name">
+                          Table 7
+                        </div>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th> </th>
+                              <th>BMW</th>
+                              <th> TOYOTA</th>
+                              <th>DAEWOO</th>
+                              <th>NISSAN</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>BMW</td>
+                              <td>0</td>
+                              <td>-1,191</td>
+                              <td>-1,719</td>
+                              <td>-2,167</td>
+                            </tr>
+                            <tr>
+                              <td>TOYOTA</td>
+                              <td>0,491</td>
+                              <td>0</td>
+                              <td>-0,878</td>
+                              <td>-1,326</td>
+                            </tr>
+                            <tr>
+                              <td>DAEWOO</td>
+                              <td>1,019</td>
+                              <td>0,178</td>
+                              <td>0</td>
+                              <td>-0,798</td>
+                            </tr>
+                            <tr>
+                              <td>NISSAN</td>
+                              <td>1,467</td>
+                              <td>0,626</td>
+                              <td>0,098</td>
+                              <td>0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </figure>
+                  </div>
+              </article>
+              <article id="q4" class="Question 4">
+                <h3>Question 4</h3>
+                <p class="question">
+                  Calculate the custmer Lifetime Value (CLV) and Customer Equity for BMW in Thailand.
+                </p>
+                <p>
+                  By using the given data from <a href="#table6">Table 6</a> and the brand switching matrix from <a href="#table7">Table 7</a> Customer Lifetime Value can be calculated (No iteration of the sum necessary, as the time period is 1):
+                </p>
+                <p>
+                  CLV<sub>j</sub> = &sum;(1+d)<sup>-t/f</sup>v<sub>j</sub>p<sub>j</sub>B<sub>j</sub> </br><i>with discount rate d = 5%, time period t = 1, frequency f = 1, volume v = 30.000€, expected contribution margin p = 20% and purchase probability B<sub>ijt</sub> = Table 6.</i>
+                </p>
+                <p>The result is the customer lifetime value. Together with the data from <a href="#table7">Table 7</a> it can be used to calculate customer equity (No mean necessary, as just one virtual customer is being looked at):</p>
+                <p>
+                  CE<sub>j</sub> = mean<sub>j</sub>(CLV<sub>ij</sub>) * POP </br>
+                  <i>with POP<sub>BMW</sub> = Table 7</i>
+                </p>
+                <div id="table8">
+                  <figure>
+                    <div class="table-name">
+                      Table 8
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>CLV</td>
+                          <td>              12.298,36 € </td>
+                        </tr>
+                      
+                        <tr>
+                          <td>CE</td>
+                          <td>  6.389.587.917,16 € </td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </figure>
+
+                </div>
+                
+              </article>
             </section>
         </main>
         <footer>
-          
+          Website by Felix Schramm </br>
+          Assignment by Felix Schramm, Jasper van der Zon, Enrico Mello @ VUB
         </footer>
     </div>
 
