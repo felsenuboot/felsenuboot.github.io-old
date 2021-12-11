@@ -1,50 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap')
 
 // Smartphones (landscape) ----------- */
 // @media screen and (min-width : 321px)
 
 // Smartphones (portrait) ----------- */
-@media screen and (max-width: 320px) 
-    table 
+@media screen and (max-width: 320px)
+    table
         display: none
 
 // iPads (portrait and landscape) ----------- */
 // @media screen and (min-device-width : 810px) and (max-device-width : 1080px) 
 
 // iPads (landscape) ----------- */
-@media screen and (min-device-width: 810px) and (max-device-width: 1080px)and (orientation: landscape) 
-    body 
+@media screen and (min-device-width: 810px) and (max-device-width: 1080px)and (orientation: landscape)
+    body
         width: 650px
         margin: 0 auto
 
 // iPads (portrait) ----------- */
-@media screen and (min-device-width: 810px) and (max-device-width: 1080px) and (orientation: portrait) 
-    body 
+@media screen and (min-device-width: 810px) and (max-device-width: 1080px) and (orientation: portrait)
+    body
         width: 650px
         margin: 0 auto
 
-
-
-@media screen and (min-width: 800px) 
-    body 
+@media screen and (min-width: 800px)
+    body
         width: 750px
         margin: 0 auto
 
 // Desktops and laptops ----------- */
-@media screen and (min-width: 1224px) 
-    body 
-        width: 850px
-        margin: 0 auto
-
-// Large screens ----------- */
-@media screen and (min-width: 1824px) 
+@media screen and (min-width: 1224px)
     body
         width: 850px
         margin: 0 auto
 
-html 
+// Large screens ----------- */
+@media screen and (min-width: 1824px)
+    body
+        width: 850px
+        margin: 0 auto
+
+html
     background-color: #fff
     font-size: 16px
     height: 100%
@@ -68,9 +65,11 @@ h2
     font-weight: bold
     font-size: 2rem
     margin-top: 3rem
+    padding-top: 60px
 h3
     font-weight: normal
     font-size: 1.5rem
+    padding-top: 60px
 h4
     font-weight: normal
     font-size: 1.25rem
@@ -91,8 +90,8 @@ table
     border-radius: 6px
     overflow: hidden
     width: 100%
-    position: relative
-    td, th 
+    //position: relative
+    td, th
         padding-left: 8px
     thead tr
         height: 60px
@@ -101,21 +100,21 @@ table
         height: 48px
         border-bottom: 1px solid #E3F1D5
     tbody tr:hover
-      background-color: #c2c9cc
-  
-    tbody tr:last-child 
+        background-color: #c2c9cc
+
+    tbody tr:last-child
         border: 0
-    
-    td, th 
+
+    td, th
         text-align: left
-    
-    td.l, th.l 
+
+    td.l, th.l
         text-align: right
-    
-    td.c, th.c 
+
+    td.c, th.c
         text-align: center
-    
-    td.r, th.r 
+
+    td.r, th.r
         text-align: center
 
 figure
@@ -131,9 +130,37 @@ figure
     margin-bottom: 0.5rem
     font-style: italic
     font-weight: bold
-        
+
 footer
     font-style: italic
     font-size: 0.75rem
-    margin-top: 15%
+    margin-top: 25%
     margin-bottom: 10px
+section
+    display: inline-block
+nav
+    margin: 25px 0
+    width: 100%
+    font-family: sans-serif
+    position: -webkit-sticky // Safari */
+    position: sticky
+    top: 0
+    z-index: 100
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        overflow: hidden
+        background-color: #0077C2
+        border-radius: 4px
+
+        li
+            float: left
+            a
+                display: block
+                color: white
+                text-align: center
+                padding: 14px 16px
+                text-decoration: none
+            a:hover
+                background-color: #009cff
