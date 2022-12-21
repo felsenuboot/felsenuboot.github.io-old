@@ -14,5 +14,5 @@
 2. [Financial Reporting Assignment](./University/AccountingandFinancialReporting/assignment.html)
 
 ### Phillips University of Marburg
-1. [Periphäre Räume](./University/Marburg/PeriphäreRäume/statistics.html)
+1. [Periphäre Räume](./University/Marburg/PeriphäreRäume/gruenerevolution.html)
 
