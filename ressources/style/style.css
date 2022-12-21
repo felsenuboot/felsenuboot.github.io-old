@@ -66,6 +66,9 @@ h1 {
   font-style: italic;
   font-size: 1.25rem;
 }
+article {
+  width: 100%;
+}
 
 h2 {
   font-weight: bold;
